@@ -1,0 +1,46 @@
+install python
+
+#install pipenv package
+pip install pipenv
+
+#activate virtual env
+pipenv shell
+
+#check virtual env
+pipenv --venv
+
+#install django
+pip install django
+
+#check django admin commands
+django-admin
+
+#create new project in same dir(dot)
+django-admin startproject <projectname> .
+
+#run project
+python manage.py runserver
+
+
+#addtional : change project
+python manage.py runserver 8001
+
+
+#Structure
+MTV(Model Templte View) Structure
+    ORM(object relational mapper) - database model
+    Models
+    Urls and views
+    Templates
+
+
+#files
+pipfile - manage versions
+manage.py - manage al django commands
+
+main files
+_init_.py - main app structure (impt empty package management)
+asgi.py - asynchronous server gateway interface(chating,websocket)
+settings.py - db config,secret key,manage all apps,middlewars
+urls.py - uniform resource locate
+wsgi - webserver gateway interface
