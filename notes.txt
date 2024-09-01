@@ -44,3 +44,16 @@ asgi.py - asynchronous server gateway interface(chating,websocket)
 settings.py - db config,secret key,manage all apps,middlewars
 urls.py - uniform resource locate
 wsgi - webserver gateway interface
+
+URLS & views
+create a file views.py
+in views py add functions and page http retunr
+in urls py we add urls to show
+
+
+python startapp <name>
+used for multiple app
+add function in views, add urls in urls and iclude in main appurls
+add my_app in installed apps for templates
+
+Add render the template name and passed context

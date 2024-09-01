@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    {{User}}
+
+    <table>
+      <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      {% for user in User %}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>
